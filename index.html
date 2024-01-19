@@ -1,0 +1,247 @@
+<!DOCTYPE html><html class="" lang="en"><head><script type="text/javascript" class="silex-json-styles" data-silex-static="">
+    window.silex = window.silex || {}
+    window.silex.data = {"site":{"width":1200},"pages":[{"id":"page-home","displayName":"Home","link":{"linkType":"LinkTypePage","href":"#!page-home"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-privacy","displayName":"Privacy","link":{"linkType":"LinkTypePage","href":"#!page-privacy"},"canDelete":true,"canRename":true,"canMove":true,"canProperties":true},{"id":"page-rules","displayName":"Rules","link":{"linkType":"LinkTypePage","href":"#!page-rules"},"canDelete":true,"canRename":true,"canMove":true,"canProperties":true}]}</script>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.14">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="https://editor.silex.me/static/2.12/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.12/jquery-ui.js" data-silex-static="" data-silex-remove-publish=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.12/pageable.js" data-silex-static="" data-silex-remove-publish=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.12/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.12/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.12/front-end.css" data-silex-static="">
+
+    <style class="silex-style"></style>
+    <script type="text/javascript" class="silex-script"><script>
+        function validateForm() {
+            // Validate text fields
+            var fields = ["name", "surname", "institute", "course", "graduationYear", "email", "phone"];
+            for (var i = 0; i < fields.length; i++) {
+                var field = document.forms["RegisterIndustryContest"][fields[i]].value;
+                if (field == null || field == "") {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+            }
+
+            // Validate gender radio buttons
+            if (!document.querySelector('input[name="gender"]:checked')) {
+                alert("Please select a gender");
+                return false;
+            }
+
+            // Validate checkboxes
+            if (!document.forms["RegisterIndustryContest"]["acceptRegulations"].checked ||
+                !document.forms["RegisterIndustryContest"]["acceptPrivacy"].checked) {
+                alert("You must agree to the contest regulations and privacy policy");
+                return false;
+            }
+
+            // Validate reCAPTCHA
+            var recaptcha = grecaptcha.getResponse();
+            if (recaptcha.length == 0) {
+                alert("Please verify that you are not a robot");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    <style class="silex-inline-styles">.body-initial {background-color: rgba(255,255,255,1); position: static;}.silex-id-1474394621033-3 {position: static; margin-top: -1px;}.silex-id-1474394621032-2 {background-color: transparent; min-height: 600px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1478366450713-3 {background-color: transparent; position: static; margin-top: -1px;}.silex-id-1478366450713-2 {background-color: transparent; min-height: 716.1624755859375px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1705648941909-4 {width: 1158px; height: 566px; position: absolute; top: -0.4000701904296875px; left: -0.8124008178710938px;}.silex-id-1705649151970-7 {position: static;}.silex-id-1705649151970-8 {min-height: 1334.9874877929688px; background-color: rgb(255, 255, 255); position: relative; margin-left: auto; margin-right: auto;}.silex-id-1705649395587-9 {width: 1185px; min-height: 1302.5374755859375px; position: absolute; top: 5px; left: 4px;}.silex-id-1705649597588-10 {width: 1181px; min-height: 702px; background-color: rgb(255, 255, 255); position: absolute; top: 5px; left: 13.862503051757812px;}.silex-id-1705650231496-13 {width: 100px; min-height: 100px; position: absolute; top: 408px; left: 548px;}.silex-id-1705650250470-14 {width: 100px; min-height: 100px; position: absolute; top: 408px; left: 548px;}@media only screen and (max-width: 480px) {}</style>
+    <title>Industry 4.0 Student Costent by Digital Industries World</title>
+    
+
+    
+<style class="silex-prodotype-style" data-style-id="all-style">.text-element > .silex-element-content {font-family: 'Roboto', sans-serif;}</style><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><style class="silex-style-settings">.website-width {width: 1200px;}@media (min-width: 481px) {.silex-editor {min-width: 1400px;}}</style><meta property="description" content="Industry 4.0 Student Costent by Digital Industries World"><link href="mw_initial-brandmark-small.png" rel="shortcut icon"></head>
+
+<body data-silex-id="body-initial" class="body-initial all-style prevent-resizable prevent-selectable editable-style silex-runtime" data-silex-type="container-element" style="">
+    
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-silex-type="container-element" class="container-element editable-style silex-id-1474394621033-3 section-element prevent-resizable page-page-1 page-home paged-element" data-silex-id="silex-id-1474394621033-3">
+        <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1474394621032-2 container-element website-width selected" data-silex-id="silex-id-1474394621032-2"><div data-silex-type="image-element" class="editable-style image-element silex-id-1705648941909-4" data-silex-id="silex-id-1705648941909-4" style=""><img src="images/Logo%20student%20contest_3Logo%20student%20contest.png"></div></div>
+    </section><section data-silex-type="container-element" class="editable-style section-element silex-id-1705649151970-7 page-page-1 page-home paged-element" data-silex-id="silex-id-1705649151970-7"><div data-silex-type="container-element" class="editable-style container-element silex-id-1705649151970-8 silex-element-content website-width prevent-draggable" data-silex-id="silex-id-1705649151970-8" style=""><div data-silex-type="text-element" class="editable-style text-element silex-id-1705649395587-9" data-silex-id="silex-id-1705649395587-9" style=""><div class="silex-element-content normal"><p></p><p><b>The Project</b></p>
+
+<p>Professional growth begins during the academic journey itself.
+Challenging oneself and engaging with market trends help acquire new skills.</p>
+
+<p>&nbsp;</p>
+
+<p>Digital
+Industries World, in collaboration with the Politecnico di Milano – Industry 4.0
+Lab of the Department of Management, Economics and Industrial Engineering and the Fondazione Politecnico di Milano, offers
+a contest where students can work in teams to develop an innovative Industry
+4.0 application using the IoT and cloud ecosystem in the manufacturing industry.</p>
+
+<p>&nbsp;</p>
+
+<p>The competition, which offers attractive prizes, is open to
+students from various degree programs and aims to provide an introduction to
+professional challenges. It is an experience that will be valuable for getting
+in touch with the digital transformation of companies facing innovation trends
+in the Industry 4.0 sector. The task is to create a cloud application for
+Industry 4.0, which may
+leverage a set of new technologies.</p>
+
+<p>&nbsp;</p>
+
+<p><b>Technical Details</b></p>
+
+<p>Teams composed of students will compete to present their
+project to a panel of experts. The experts who will accompany the teams during
+the contest will be professors from the Politecnico di Milano and expert members of Digital Industries World from associated
+companies. Digital Industries
+World is the leading global community for IoT (digital-industries.org),
+bringing together multidisciplinary institutions and promoting the exchange of
+knowledge and insights to accelerate the digital transformation of the
+industry.</p>
+
+<p>&nbsp;</p>
+
+<p>The association of companies has existed since 2018 and is
+present in various highly industrialized countries worldwide. In Italy, the hub
+coordinates activities for Southern European countries and already has more
+than 30 leading companies among its members.</p>
+
+<p>&nbsp;</p>
+
+<p>All participating students will receive a participation
+certificate that can enrich their professional profile. There will be an
+initial award for the developed concepts and a more significant second award
+for the top 5 groups that have successfully implemented their solution!
+Moreover, during the contest, students will have the opportunity to delve into
+Industry 4.0-related topics and acquire new skills through specific training sessions.</p>
+
+<p>&nbsp;</p>
+
+<p>Some of the topics covered include:</p>
+
+<p>· &nbsp; &nbsp; &nbsp; 
+Industry 4.0 communication architectures</p>
+
+<p>· &nbsp; &nbsp; &nbsp; 
+Data analysis</p>
+
+<p>· &nbsp; &nbsp; &nbsp; 
+Development of solutions for production sectors
+such as predictive maintenance, machine monitoring, production scheduling, and
+energy monitoring.</p>
+
+<p>&nbsp;</p>
+
+<p><b>Steps and Phases of the</b><b> International Industry 4.0 Student
+Contest</b><b> 2024</b></p>
+
+<p><b>Student registrations</b>: by January 31, 2024.</p>
+
+<p><b>Phase 1 of the contest</b> - idea challenge: February - March</p>
+
+<p>· &nbsp; &nbsp; &nbsp; 
+Launch event and introductory training</p>
+
+<p>· &nbsp; &nbsp; &nbsp; 
+Visit (hybrid) to the Industry 4.0
+Lab at the Department of Management, Economics and Industrial Engineering (<a href="https://www.industry40lab.org">https://www.industry40lab.org</a>)</p>
+
+<p>· &nbsp; &nbsp; &nbsp; 
+Preparation of student concepts and selection of
+the top 10 groups</p>
+
+<p><b>Idea challenge award ceremony</b>: April XX, 2024</p>
+
+<p>&nbsp;</p>
+
+<p><b>Phase 2 of the contest </b>- boost program: April - June</p>
+
+<p>· &nbsp; &nbsp; &nbsp; 
+Project development with the support of the
+Industry 4.0 Lab and
+companies</p>
+
+<p><b>Boost program award ceremony</b>: June 2024&nbsp;</p>
+
+
+
+SIGN
+UP NOW THROUGH THE FORM BELOW!
+
+
+
+<p></p></div></div></div></section><section data-silex-type="container-element" class="container-element editable-style silex-id-1478366450713-3 section-element prevent-resizable page-page-1 page-home paged-element" data-silex-id="silex-id-1478366450713-3">
+        <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1478366450713-2 container-element website-width" data-silex-id="silex-id-1478366450713-2" style="">
+
+            
+        <div data-silex-type="html-element" class="editable-style html-element silex-id-1705649597588-10" data-silex-id="silex-id-1705649597588-10" style=""><div class="silex-element-content"><form name="RegisterIndustryContest" method="POST" data-netlify-recaptcha="true" data-netlify="true" onsubmit="return validateForm()">
+        <p>
+            <label>Name: <input type="text" name="name"></label>
+        </p>
+        <p>
+            <label>Surname: <input type="text" name="surname"></label>
+        </p>
+        <p>
+            Gender: 
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </p>
+        <p>
+            <label>Institute: <input type="text" name="institute"></label>
+        </p>
+        <p>
+            <label>Course: <input type="text" name="course"></label>
+        </p>
+        <p>
+            <label>Expected Graduation Year: <input type="number" name="graduationYear" min="2024"></label>
+        </p>
+        <p>
+            <label>Email: <input type="email" name="email"></label>
+        </p>
+        <p>
+            <label>Phone: <input type="tel" name="phone"></label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="acceptRegulations"> 
+                I accept the <a href="rules.html" target="_blank">Contest Regulations</a>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="acceptPrivacy"> 
+                I accept the <a href="privacy.html" target="_blank">Privacy Policy</a>
+            </label>
+        </p>
+        <div data-netlify-recaptcha="true"></div>
+        <p>
+            <input type="submit" value="I accept the challenge!" <="" input="">
+        </p>
+    </form></div></div></div>
+    </section><div data-silex-type="text-element" class="editable-style text-element silex-id-1705650231496-13 page-privacy paged-element" data-silex-id="silex-id-1705650231496-13"><div class="silex-element-content normal"><p>Privacy work in progress</p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1705650250470-14 page-rules paged-element" data-silex-id="silex-id-1705650250470-14"><div class="silex-element-content normal"><p>Rules work in progress</p></div></div></body></html>
