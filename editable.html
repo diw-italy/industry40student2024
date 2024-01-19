@@ -14,7 +14,41 @@
     <link rel="stylesheet" href="https://editor.silex.me/static/2.12/front-end.css" data-silex-static="">
 
     <style class="silex-style"></style>
-    <script type="text/javascript" class="silex-script"></script>
+    <script type="text/javascript" class="silex-script"><script>
+        function validateForm() {
+            // Validate text fields
+            var fields = ["name", "surname", "institute", "course", "graduationYear", "email", "phone"];
+            for (var i = 0; i < fields.length; i++) {
+                var field = document.forms["RegisterIndustryContest"][fields[i]].value;
+                if (field == null || field == "") {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+            }
+
+            // Validate gender radio buttons
+            if (!document.querySelector('input[name="gender"]:checked')) {
+                alert("Please select a gender");
+                return false;
+            }
+
+            // Validate checkboxes
+            if (!document.forms["RegisterIndustryContest"]["acceptRegulations"].checked ||
+                !document.forms["RegisterIndustryContest"]["acceptPrivacy"].checked) {
+                alert("You must agree to the contest regulations and privacy policy");
+                return false;
+            }
+
+            // Validate reCAPTCHA
+            var recaptcha = grecaptcha.getResponse();
+            if (recaptcha.length == 0) {
+                alert("Please verify that you are not a robot");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
     <style class="silex-inline-styles">.body-initial {background-color: rgba(255,255,255,1); position: static;}.silex-id-1474394621033-3 {position: static; margin-top: -1px;}.silex-id-1474394621032-2 {background-color: transparent; min-height: 600px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1478366450713-3 {background-color: transparent; position: static; margin-top: -1px;}.silex-id-1478366450713-2 {background-color: transparent; min-height: 716.1624755859375px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1705648941909-4 {width: 1158px; height: 566px; position: absolute; top: -0.4000701904296875px; left: -0.8124008178710938px;}.silex-id-1705649151970-7 {position: static;}.silex-id-1705649151970-8 {min-height: 1334.9874877929688px; background-color: rgb(255, 255, 255); position: relative; margin-left: auto; margin-right: auto;}.silex-id-1705649395587-9 {width: 1185px; min-height: 1302.5374755859375px; position: absolute; top: 5px; left: 4px;}.silex-id-1705649597588-10 {width: 1181.137451171875px; min-height: 702.7999877929688px; background-color: rgb(255, 255, 255); position: absolute; top: 4px; left: 13.862548828125px;}.silex-id-1705650231496-13 {width: 100px; min-height: 100px; position: absolute; top: 408px; left: 548px;}.silex-id-1705650250470-14 {width: 100px; min-height: 100px; position: absolute; top: 408px; left: 548px;}@media only screen and (max-width: 480px) {}</style>
     <title>Industry 4.0 Student Costent by Digital Industries World</title>
     
